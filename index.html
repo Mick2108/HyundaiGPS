@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to update your Hyundai GPS maps with our step-by-step guide. Keep your navigation system current for the best driving experience.">
+    <meta name="keywords" content="Hyundai GPS update, Hyundai navigation, map update, Hyundai GPS, Hyundai GPS maps, NaviSolve">
+    <meta name="author" content="Hyundai GPS Support">
+    <title>How to update Hyundai GPS map to a Hyundai GPS?</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #002d62 0%, #0050a0 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo i {
+            font-size: 2rem;
+            color: #ffcc00;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-menu li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        .nav-menu li a:hover {
+            color: #ffcc00;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 45, 98, 0.8), rgba(0, 45, 98, 0.9)), url('https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            animation: slideUp 1s ease-out;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            animation: slideUp 1.2s ease-out;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #ffcc00;
+            color: #002d62;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s;
+            animation: pulse 2s infinite;
+        }
+
+        .cta-button:hover {
+            background-color: #ffd84d;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Content Section */
+        .content-section {
+            padding: 4rem 0;
+            background-color: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #002d62;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: #ffcc00;
+            margin: 10px auto;
+            border-radius: 2px;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .content-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-img {
+            height: 200px;
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #002d62;
+            font-size: 3rem;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-content h3 {
+            color: #002d62;
+            margin-bottom: 1rem;
+        }
+
+        .card-content p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-button {
+            display: inline-block;
+            background-color: #002d62;
+            color: white;
+            padding: 0.6rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+
+        .card-button:hover {
+            background-color: #0050a0;
+        }
+
+        /* Steps Section */
+        .steps-section {
+            padding: 4rem 0;
+            background-color: #f8f9fa;
+        }
+
+        .steps-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .step {
+            display: flex;
+            margin-bottom: 2.5rem;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .step-number {
+            flex: 0 0 60px;
+            height: 60px;
+            background: #002d62;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-right: 1.5rem;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .step-content h3 {
+            color: #002d62;
+            margin-bottom: 0.5rem;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 4rem 0;
+            background-color: white;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .faq-question {
+            background: #002d62;
+            color: white;
+            padding: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+
+        .faq-question:hover {
+            background: #0050a0;
+        }
+
+        .faq-answer {
+            padding: 1.2rem;
+            background: #f8f9fa;
+            display: none;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* NaviSolve Section */
+        .navisolve-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #002d62 0%, #0050a0 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .navisolve-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .navisolve-content h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .navisolve-content p {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .navisolve-button {
+            display: inline-block;
+            background-color: #ffcc00;
+            color: #002d62;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s;
+            font-size: 1.1rem;
+        }
+
+        .navisolve-button:hover {
+            background-color: #ffd84d;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background: #002d62;
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-column h3 {
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 3px;
+            background: #ffcc00;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #ffcc00;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background: #ffcc00;
+            color: #002d62;
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                right: -100%;
+                flex-direction: column;
+                background: #002d62;
+                width: 80%;
+                height: calc(100vh - 70px);
+                transition: 0.5s;
+                padding: 2rem;
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-menu.active {
+                right: 0;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .step {
+                flex-direction: column;
+            }
+
+            .step-number {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h1>Hyundai GPS</h1>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://navisolve.com/" target="_blank">Update</a></li>
+                    <li><a href="https://navisolve.com/" target="_blank">Support</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>How to Update Hyundai GPS Map</h2>
+            <p>Keep your Hyundai navigation system up-to-date with the latest maps and features. Follow our simple guide to ensure you always have the most accurate directions.</p>
+            <a href="#update-steps" class="cta-button">Update Now</a>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">Why Update Your Hyundai GPS?</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <div class="card-img">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Accurate Directions</h3>
+                        <p>New roads, changed traffic patterns, and updated points of interest ensure you always have the most efficient route. With over 15% of road networks changing annually in urban areas, outdated maps can lead to significant detours and frustration. Regular updates incorporate new residential developments, business districts, and highway expansions that have transformed the driving landscape in recent years.</p>
+                        <a href="#" class="card-button">Learn More</a>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="card-img">
+                        <i class="fas fa-gas-pump"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Save Time & Fuel</h3>
+                        <p>Optimized routes help reduce travel time and fuel consumption, saving you money on every journey. Modern GPS systems calculate routes based on real-time traffic data, road conditions, and even your driving habits. Updated maps include new traffic patterns, one-way streets, and turn restrictions that weren't present in older versions. Industry studies show that drivers using updated navigation systems save an average of 12 minutes per day and reduce fuel consumption by up to 5% annually.</p>
+                        <a href="#" class="card-button">Learn More</a>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="card-img">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Enhanced Safety</h3>
+                        <p>Updated maps include new safety features, speed limits, and traffic regulations for a safer drive. Modern navigation systems integrate with your vehicle's safety systems, providing alerts for sharp curves, school zones, and high-accident areas. The latest updates incorporate changes to speed limits, which are frequently adjusted based on traffic studies and community feedback. Additionally, new roundabouts, traffic calming measures, and updated intersection designs are included to help prevent accidents.</p>
+                        <a href="#" class="card-button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section class="steps-section" id="update-steps">
+        <div class="container">
+            <h2 class="section-title">How to Update Your Hyundai GPS</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Check Your Current Map Version</h3>
+                        <p>Go to your Hyundai's navigation system settings and find the "Map Information" or "System Information" section to check your current map version and determine if an update is needed. This information is typically found by tapping the "Setup" or "Menu" button on your navigation screen, then selecting "System Information" or "Map Version." Make note of the current version number and compare it with the latest available version on the Hyundai navigation portal. Most Hyundai models display the map version in a format like "13.1" or "2023.1" where the number corresponds to the year and quarter of release.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Purchase the Latest Map Update</h3>
+                        <p>Visit the official Hyundai navigation update website or your local Hyundai dealer to purchase the latest map update for your specific model and navigation system. Hyundai typically releases map updates quarterly, with major revisions annually. When purchasing, ensure you select the correct update for your vehicle's model year and navigation system type (standard navigation or premium navigation with larger display). The update process may vary between systems, so it's crucial to get the right version. Many Hyundai vehicles come with complimentary map updates for the first three years, after which updates become a paid service.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Prepare Your USB Drive</h3>
+                        <p>Format a USB drive (at least 32GB) to FAT32 file system. Download the update files to your computer and transfer them to the USB drive following the instructions provided. It's essential to use a high-quality USB drive with sufficient storage capacity and fast read speeds to ensure a smooth update process. Before transferring the files, completely format the drive to remove any existing data that might interfere with the installation. The download process can take several hours depending on your internet connection speed, so plan accordingly. Ensure your computer remains powered on and connected to the internet throughout the entire download process.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Install the Update in Your Vehicle</h3>
+                        <p>With your vehicle running and parked in a safe location, insert the USB drive into your Hyundai's USB port. Follow the on-screen prompts to complete the installation process. The update typically takes between 30-90 minutes to complete, during which you should not turn off the vehicle or remove the USB drive. It's recommended to perform this update when you have at least an hour of driving time available, as the process cannot be interrupted once started. Some Hyundai models may require the engine to be running throughout the update, while others may allow the update to proceed with just the accessory power on. Consult your owner's manual for specific instructions.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Verify the Update</h3>
+                        <p>Once installation is complete, verify that the new map version is correctly installed by checking the "Map Information" section again. Restart your navigation system if needed. Take a short test drive to ensure all navigation functions are working correctly. Pay attention to the map display, voice guidance, and route calculation. If you encounter any issues, note the specific problem and contact Hyundai customer support. It's also recommended to check for any additional software updates that might be available for your navigation system, as these can improve performance and add new features beyond just map data.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NaviSolve Section -->
+    <section class="navisolve-section">
+        <div class="container">
+            <div class="navisolve-content">
+                <h2>Professional GPS Update Services</h2>
+                <p>For guaranteed compatibility and expert support with your Hyundai GPS updates, visit our trusted partner NaviSolve. They specialize in navigation system updates for all Hyundai models and provide comprehensive technical support to ensure a seamless update experience.</p>
+                <a href="https://navisolve.com/" class="navisolve-button" target="_blank">Update with NaviSolve</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How often should I update my Hyundai GPS maps?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We recommend updating your Hyundai GPS maps at least once a year to ensure you have the latest road changes, new points of interest, and traffic pattern updates. Hyundai typically releases new map updates quarterly, with major revisions annually. However, if you live in an area experiencing rapid development or frequently travel to unfamiliar locations, updating every six months might be beneficial. Regular updates ensure you have access to new residential developments, business districts, highway expansions, and changed traffic patterns that have transformed the driving landscape. According to transportation authorities, approximately 15% of road networks change in urban areas each year, making regular updates essential for accurate navigation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I update my Hyundai GPS for free?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most Hyundai GPS map updates require a purchase, as they include licensed map data from providers like HERE or TomTom. However, some models may include complimentary updates for the first few years. Check with your dealer or the Hyundai navigation portal for specific offers. Many newer Hyundai vehicles come with three years of complimentary map updates through the Hyundai Map Care program. After this period, updates typically cost between $150-$250 depending on your region and navigation system type. Some third-party services may offer lower prices, but it's crucial to ensure they provide genuine, compatible updates to avoid damaging your navigation system. Always verify the source before purchasing map updates.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What if my update fails or encounters errors?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>If your update fails, first ensure your vehicle is in a well-ventilated area and the engine is running to prevent battery drain. Try using a different USB drive, reformat it, and download the update files again. If problems persist, contact Hyundai customer support for assistance. Common issues include incompatible USB drives, insufficient storage space, corrupted download files, or interruptions during the update process. Never turn off your vehicle during an update as this can corrupt the navigation system software. If an update fails mid-process, you may need to visit a Hyundai dealership to have the system reset or reflashed. To minimize risks, always back up your current navigation data if possible and ensure your vehicle's battery is in good condition before starting the update.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How long does a GPS map update take?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The update process typically takes between 30 minutes to 2 hours, depending on your specific Hyundai model and the size of the update. It's important not to turn off your vehicle during the update process to avoid corruption of the navigation system. The download time for the update files to your computer can add several hours depending on your internet connection speed. For larger updates or slower internet connections, this download might take 4-6 hours. The actual installation in your vehicle generally takes 45-90 minutes. Plan to perform the update when you have adequate time and can keep the vehicle running uninterrupted. Some newer Hyundai models with telematics systems may allow for over-the-air updates that don't require a USB drive, significantly simplifying the process.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Will updating my GPS affect other vehicle systems?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, updating your GPS maps should not affect other vehicle systems. The update process only modifies the navigation database and related software components. However, it's always recommended to follow the manufacturer's instructions carefully and ensure your vehicle's battery is in good condition before starting any update process. Modern vehicles have segregated systems where infotainment updates are isolated from critical vehicle control systems. That said, it's good practice to check for any recalls or service bulletins related to your vehicle's navigation system before updating. If you have any concerns about compatibility or potential issues, consult with your Hyundai dealership or a qualified technician who can verify that your specific vehicle is ready for the update.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Hyundai GPS</h3>
+                    <p>Your trusted source for Hyundai navigation updates and support. We help you keep your GPS system current with the latest maps and features.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="https://navisolve.com/" target="_blank">Update GPS</a></li>
+                        <li><a href="https://navisolve.com/" target="_blank">Support</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="return-policy.html">Return Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone"></i> 1-800-HYUNDAI</li>
+                        <li><i class="fas fa-envelope"></i> support@hyundaigps.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Hyundai Motor America, Fountain Valley, CA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Hyundai GPS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                // Close all other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
